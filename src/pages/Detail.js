@@ -3,14 +3,14 @@ import Footer from "../containers/Footer/Footer";
 
 
 
-const Home = () => {
+const Details = () => {
     return (
       <>
         <Header/>
-        <h1>Home</h1>
+        <h1>Details</h1>
         <Footer/>
       </>
     );
   };
   
-export default Home;
+export default Details;

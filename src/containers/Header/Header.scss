@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap&subset=vietnamese');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+$red: #ff5b6a;
+$charcoal-blue: #142f43;
+header {
+    width: 100%;
+    box-shadow: 0 1px 4px rgb(0 0 0 / 15%);
+}
+
+.header-container {
+    width: 100%;
+    height: 100px;
+    .header-content {
+        .left-content{
+            a {
+                position: relative;
+                top: 15px;
+            }
+        }
+        .center-content{
+            li {
+                display: block;
+                float: left;
+                a {
+                    color: $charcoal-blue;
+                    text-transform: uppercase;
+                    position: relative;
+                    display: block;
+                    padding: 39px 12px 15px;
+                    min-height: 100px;
+                    font-weight: 700;
+                    text-decoration: none;
+                }
+                a:hover {
+                    color: $red;
+                    border-bottom: 2px solid $red;
+                }
+            }
+        }
+        .right-content{
+            .block-info{
+                padding-top: 12px;
+                .language {
+                    form {
+                        select {
+                            width: 100%;
+                            border: none;
+                            border-radius: 4px;
+                            box-shadow:  1px 2px 3px rgb(0 0 0 / 15%);
+                            font-size: 12px;
+                            padding: 4px 8px;   
+                            .icon-flag-vn{
+                                background-image: url(../../images/icon-vn.svg);
+                                background-position: 5px 5px;
+                                background-repeat: no-repeat;
+                            }
+                            .icon-flag-en{
+                                background-image: url(../../images/icon-en.svg);
+                            }
+                        }
+                    }
+                }
+                .download-app {
+                    width: fit-content;
+                    background-color: $red;
+                    color: white;
+                    border-radius: 4px;
+                    padding: 4px 8px;
+                    font-size: 12px;
+                    box-shadow: 0 4px 8px rgb(0 0 0 / 15%);
+                    font-weight: 400;
+                    text-transform: capitalize;
+                }
+            }
+            .account-menu{
+                width: 100%;
+                ul {
+                    margin-left: 0rem;
+                    margin-bottom: 0rem;
+                    padding: 10px 0;
+                    li {
+                        display: block;
+                        float: left;
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 50%;
+                        box-shadow: 0 4px 8px rgb(0 0 0 / 15%);
+                        text-align: center;
+                        padding-top: 4px;
+                        margin: 0 10px;
+                        font-size: 21px;
+                        a {
+                            color: $charcoal-blue;
+                        }
+                    }
+                }
+                
+            }
+        }
+    }
+}

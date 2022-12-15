@@ -1,7 +1,7 @@
 import './Login.scss';
 import {Component} from 'react';
 import { FaFacebook, FaGoogle } from "react-icons/fa";
-import { Button} from "reactstrap"
+import { Button} from "reactstrap";
 
 class Login extends Component {
     constructor(props) {
